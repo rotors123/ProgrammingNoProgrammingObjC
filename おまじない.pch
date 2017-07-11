@@ -32,4 +32,6 @@
 
 #define ポインタを使って *
 
+#define レイアウトの制約 NSLayoutConstraint
+
 #endif

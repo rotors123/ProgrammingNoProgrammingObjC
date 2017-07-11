@@ -34,45 +34,37 @@
     // なぜかIBOutletでの紐付けができない状態となったので
     // コードでパーツ生成し、AutoLayoutを設定する。
     
-    UITextView *textView = [[UITextView alloc] initWithFrame: self.view.bounds];
-    textView.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview: textView];
+    文字用の部品の雛形 *文字用の部品 = [[文字用の部品の雛形 alloc] initWithFrame: 自クラスの.view.bounds];
+    文字用の部品.textAlignment = NSTextAlignmentCenter;
+    [自クラスの.view addSubview: 文字用の部品];
     
-    [textView setTranslatesAutoresizingMaskIntoConstraints: NO];
+    [文字用の部品 setTranslatesAutoresizingMaskIntoConstraints: NO];
     
-    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(textView);
+    //
+    NSDictionary *viewsDictionary = @{@"textView": 文字用の部品};
 
-    [NSLayoutConstraint activateConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[textView]|"
+    [レイアウトの制約 activateConstraints:
+     [レイアウトの制約 constraintsWithVisualFormat: @"H:|[textView]|"
                                              options: 0
                                              metrics: nil
                                                views: viewsDictionary]];
-    [NSLayoutConstraint activateConstraints:
-     [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-100-[textView]-100-|"
+    [レイアウトの制約 activateConstraints:
+     [レイアウトの制約 constraintsWithVisualFormat: @"V:|-100-[textView]-100-|"
                                              options: 0
                                              metrics: nil
                                                views: viewsDictionary]];
     
-    textView.編集可能 = いいえ;
-    textView.選択可能 = いいえ;
+    文字用の部品.編集可能 = いいえ;
+    文字用の部品.選択可能 = いいえ;
 
-    自クラスの.文字用の部品 = textView;
-    
-/*
-    [NSLayoutConstraint activateConstraints: @[
-                                              [textView.centerXAnchor constraintEqualToAnchor:view.centerXAnchor],
-                                              ...
-                                              ]];
-*/
-    
-    NSLog(@"textView = %@", textView);
+    自クラスの.文字用の部品 = 文字用の部品;
 
 }
 
 - (何も戻さない関数)文字を書く {
     
     // 今回は簡素に。
-    自クラスの.文字用の部品.テキスト = @"テスト。テスト。テスト。";
+    自クラスの.文字用の部品.テキスト = @"テスト。テスト。テスト。\n\n　　　〜改行テスト。";
     
 }
 
