@@ -27,11 +27,29 @@
 #define 同時に高速に動く nonatomic
 #define 強い参照 strong
 
-#define 接続口 IBOutlet
 #define 文字用の部品の雛形 UITextView
 
 #define ポインタを使って *
 
 #define レイアウトの制約 NSLayoutConstraint
+#define メモリを確保 alloc
+#define フレームを指定して初期化 initWithFrame
+
+#define テキストの整列 textAlignment
+#define テキスト中央揃え NSTextAlignmentCenter
+
+#define 画面の部品 view
+#define 境界範囲 bounds
+
+#define 辞書 NSDictionary
+
+#define 画面部品を追加 addSubview
+#define 従来の自動幅調整機能の利用 setTranslatesAutoresizingMaskIntoConstraints
+#define 制約を有効化 activateConstraints
+#define いわゆるアスキーアート的な記述で制約を constraintsWithVisualFormat
+
+#define オプション群 options
+#define 幅とかの指標 metrics
+#define 部品群 views
 
 #endif

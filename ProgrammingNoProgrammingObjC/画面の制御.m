@@ -6,7 +6,7 @@
 //  著作権: 2017年 ロータース123
 //
 
-// 冒頭のここだけは訳せない。
+// 冒頭のimportは置き換えられない。
 #import "画面の制御.h"
 
 インターフェイスここから 画面の制御 ()
@@ -17,42 +17,36 @@
 
 - (何も戻さない関数)画面が読み込まれた後に {
     
-    // [親クラスの 画面が読み込まれた後に];
-    [super viewDidLoad];
+    [親クラスの 画面が読み込まれた後に];
 
-    NSLog(@"start viewDidLoad");
-    
     [自クラスの 文字用の部品を作る];
     [自クラスの 文字を書く];
-
-    NSLog(@"end viewDidLoad");
 
 }
 
 - (何も戻さない関数)文字用の部品を作る {
     
-    // なぜかIBOutletでの紐付けができない状態となったので
-    // コードでパーツ生成し、AutoLayoutを設定する。
+    文字用の部品の雛形 *文字用の部品 = [[文字用の部品の雛形 メモリを確保]
+                         フレームを指定して初期化: 自クラスの.画面の部品.境界範囲];
+    文字用の部品.テキストの整列 = テキスト中央揃え;
+    [自クラスの.画面の部品 画面部品を追加: 文字用の部品];
     
-    文字用の部品の雛形 *文字用の部品 = [[文字用の部品の雛形 alloc] initWithFrame: 自クラスの.view.bounds];
-    文字用の部品.textAlignment = NSTextAlignmentCenter;
-    [自クラスの.view addSubview: 文字用の部品];
+    [文字用の部品 従来の自動幅調整機能の利用: いいえ];
     
-    [文字用の部品 setTranslatesAutoresizingMaskIntoConstraints: NO];
     
-    //
-    NSDictionary *viewsDictionary = @{@"textView": 文字用の部品};
-
-    [レイアウトの制約 activateConstraints:
-     [レイアウトの制約 constraintsWithVisualFormat: @"H:|[textView]|"
-                                             options: 0
-                                             metrics: nil
-                                               views: viewsDictionary]];
-    [レイアウトの制約 activateConstraints:
-     [レイアウトの制約 constraintsWithVisualFormat: @"V:|-100-[textView]-100-|"
-                                             options: 0
-                                             metrics: nil
-                                               views: viewsDictionary]];
+    // この辺は日本語が利用できなかった。
+    辞書 *画面の部品辞書 = @{@"textView": 文字用の部品};
+    
+    [レイアウトの制約 制約を有効化:
+     [レイアウトの制約 いわゆるアスキーアート的な記述で制約を: @"H:|[textView]|"
+                                             オプション群: 0
+                                             幅とかの指標: nil
+                                             部品群: 画面の部品辞書]];
+    [レイアウトの制約 制約を有効化:
+     [レイアウトの制約 いわゆるアスキーアート的な記述で制約を: @"V:|-100-[textView]-100-|"
+                                             オプション群: 0
+                                             幅とかの指標: nil
+                                             部品群: 画面の部品辞書]];
     
     文字用の部品.編集可能 = いいえ;
     文字用の部品.選択可能 = いいえ;
