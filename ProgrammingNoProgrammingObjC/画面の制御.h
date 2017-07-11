@@ -1,6 +1,6 @@
 //
-//  ViewController.h
-//  ProgrammingNoProgrammingObjC
+//  画面の制御.h
+//  できるだけプログラムっぽくないプログラミング
 //
 //  Created by rotors123 on 2017/07/11.
 //  Copyright © 2017年 rotors123. All rights reserved.

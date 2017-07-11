@@ -42,7 +42,7 @@
 		8D2836161F147EC600CAA6F8 = {
 			isa = PBXGroup;
 			children = (
-				8D2836211F147EC600CAA6F8 /* できるだけ〜 */,
+				8D2836211F147EC600CAA6F8 /* できるだけ（Obj-C版） */,
 				8D2836201F147EC600CAA6F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8D2836211F147EC600CAA6F8 /* できるだけ〜 */ = {
+		8D2836211F147EC600CAA6F8 /* できるだけ（Obj-C版） */ = {
 			isa = PBXGroup;
 			children = (
 				8D2836251F147EC600CAA6F8 /* アプリ全般の処理.h */,
@@ -66,18 +66,18 @@
 				8D28362E1F147EC600CAA6F8 /* 素材.xcassets */,
 				8D2836301F147EC600CAA6F8 /* 起動画面.storyboard */,
 				8D2836331F147EC600CAA6F8 /* 情報.plist */,
-				8D2836221F147EC600CAA6F8 /* Supporting Files */,
+				8D2836221F147EC600CAA6F8 /* 補助ファイル */,
 			);
-			name = "できるだけ〜";
+			name = "できるだけ（Obj-C版）";
 			path = ProgrammingNoProgrammingObjC;
 			sourceTree = "<group>";
 		};
-		8D2836221F147EC600CAA6F8 /* Supporting Files */ = {
+		8D2836221F147EC600CAA6F8 /* 補助ファイル */ = {
 			isa = PBXGroup;
 			children = (
 				8D2836231F147EC600CAA6F8 /* main.m */,
 			);
-			name = "Supporting Files";
+			name = "補助ファイル";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
