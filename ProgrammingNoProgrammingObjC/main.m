@@ -2,8 +2,8 @@
 //  main.m
 //  できるだけプログラムっぽくないプログラミング
 //
-//  Created by rotors123 on 2017/07/11.
-//  Copyright © 2017年 rotors123. All rights reserved.
+//  ロータース123によって2017年7月某日に作られました。
+//  著作権: 2017年 ロータース123
 //
 
 #import <UIKit/UIKit.h>

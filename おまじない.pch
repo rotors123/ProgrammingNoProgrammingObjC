@@ -3,13 +3,33 @@
 //  できるだけプログラムっぽくないプログラミング
 //
 //  Created by yuichisato on 2017/07/11.
-//  Copyright © 2017年 rotors123. All rights reserved.
+//  著作権: 2017年 ロータース123
 //
 
 #ifndef _______pch
 #define _______pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define 親クラスの super
+#define 自クラスの self
+#define 何も戻さない関数 void
+#define 画面が読み込まれた後に viewDidLoad
 
-#endif /* _______pch */
+#define 編集可能 editable
+#define 選択可能 selectable
+#define いいえ NO
+#define テキスト text
+
+#define 実装ここから  @implementation
+#define インターフェイスここから @interface
+#define ここまで @end
+
+#define 特性 @property
+#define 同時に高速に動く nonatomic
+#define 弱い参照 weak
+
+#define 接続口 IBOutlet
+#define 文字用の部品の雛形 UITextView
+
+#define ポインタを使って *
+
+#endif

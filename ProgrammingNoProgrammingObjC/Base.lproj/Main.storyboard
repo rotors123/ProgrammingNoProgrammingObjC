@@ -40,9 +40,6 @@
                             <constraint firstItem="jYO-NO-Fwa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="weg-Wp-ezw"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="文字用の部品" destination="jYO-NO-Fwa" id="pC2-Ay-NjB"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
