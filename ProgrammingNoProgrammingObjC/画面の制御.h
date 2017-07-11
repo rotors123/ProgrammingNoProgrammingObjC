@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface 画面を制御するところ : UIViewController
+@interface 画面の制御 : UIViewController
 
 @end
 

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--画面を制御するところ-->
+        <!--画面の制御-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="画面を制御するところ" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="画面の制御" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -41,7 +41,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="textView" destination="jYO-NO-Fwa" id="dhi-Hn-c6R"/>
+                        <outlet property="文字用の部品" destination="jYO-NO-Fwa" id="pC2-Ay-NjB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

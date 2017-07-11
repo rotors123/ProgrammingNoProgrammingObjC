@@ -6,15 +6,15 @@
 //  Copyright © 2017年 rotors123. All rights reserved.
 //
 
-#import "画面を制御するところ.h"
+#import "画面の制御.h"
 
-@interface 画面を制御するところ ()
+@interface 画面の制御 ()
 
 @property (nonatomic, weak) IBOutlet UITextView *文字用の部品;
 
 @end
 
-@implementation 画面を制御するところ
+@implementation 画面の制御
 
 - (void)viewDidLoad {
 
@@ -29,7 +29,7 @@
 
 - (void)文字を書く {
     
-    _文字用の部品.text = @"text\ntext.";
+    _文字用の部品.text = @"test.\ntext.";
     
 }
 

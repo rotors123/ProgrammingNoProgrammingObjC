@@ -6,13 +6,13 @@
 //  Copyright © 2017年 rotors123. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "アプリ全般の処理.h"
 
-@interface AppDelegate ()
+@interface アプリ全般の処理 ()
 
 @end
 
-@implementation AppDelegate
+@implementation アプリ全般の処理
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8D2836241F147EC600CAA6F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2836231F147EC600CAA6F8 /* main.m */; };
-		8D2836271F147EC600CAA6F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2836261F147EC600CAA6F8 /* AppDelegate.m */; };
-		8D28362A1F147EC600CAA6F8 /* 画面を制御するところ.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2836291F147EC600CAA6F8 /* 画面を制御するところ.m */; };
+		8D2836271F147EC600CAA6F8 /* アプリ全般の処理.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2836261F147EC600CAA6F8 /* アプリ全般の処理.m */; };
+		8D28362A1F147EC600CAA6F8 /* 画面の制御.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2836291F147EC600CAA6F8 /* 画面の制御.m */; };
 		8D28362D1F147EC600CAA6F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D28362B1F147EC600CAA6F8 /* Main.storyboard */; };
 		8D28362F1F147EC600CAA6F8 /* 素材.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D28362E1F147EC600CAA6F8 /* 素材.xcassets */; };
 		8D2836321F147EC600CAA6F8 /* 起動画面.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D2836301F147EC600CAA6F8 /* 起動画面.storyboard */; };
@@ -18,10 +18,10 @@
 /* Begin PBXFileReference section */
 		8D28361F1F147EC600CAA6F8 /* できるだけプログラムっぽくないプログラミング.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "できるだけプログラムっぽくないプログラミング.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D2836231F147EC600CAA6F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8D2836251F147EC600CAA6F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8D2836261F147EC600CAA6F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8D2836281F147EC600CAA6F8 /* 画面を制御するところ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "画面を制御するところ.h"; sourceTree = "<group>"; };
-		8D2836291F147EC600CAA6F8 /* 画面を制御するところ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "画面を制御するところ.m"; sourceTree = "<group>"; };
+		8D2836251F147EC600CAA6F8 /* アプリ全般の処理.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "アプリ全般の処理.h"; sourceTree = "<group>"; };
+		8D2836261F147EC600CAA6F8 /* アプリ全般の処理.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "アプリ全般の処理.m"; sourceTree = "<group>"; };
+		8D2836281F147EC600CAA6F8 /* 画面の制御.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "画面の制御.h"; sourceTree = "<group>"; };
+		8D2836291F147EC600CAA6F8 /* 画面の制御.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "画面の制御.m"; sourceTree = "<group>"; };
 		8D28362C1F147EC600CAA6F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D28362E1F147EC600CAA6F8 /* 素材.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "素材.xcassets"; sourceTree = "<group>"; };
 		8D2836311F147EC600CAA6F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/起動画面.storyboard"; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		8D2836161F147EC600CAA6F8 = {
 			isa = PBXGroup;
 			children = (
-				8D2836211F147EC600CAA6F8 /* ProgrammingNoProgrammingObjC */,
+				8D2836211F147EC600CAA6F8 /* できるだけ〜 */,
 				8D2836201F147EC600CAA6F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,19 +55,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8D2836211F147EC600CAA6F8 /* ProgrammingNoProgrammingObjC */ = {
+		8D2836211F147EC600CAA6F8 /* できるだけ〜 */ = {
 			isa = PBXGroup;
 			children = (
-				8D2836251F147EC600CAA6F8 /* AppDelegate.h */,
-				8D2836261F147EC600CAA6F8 /* AppDelegate.m */,
-				8D2836281F147EC600CAA6F8 /* 画面を制御するところ.h */,
-				8D2836291F147EC600CAA6F8 /* 画面を制御するところ.m */,
+				8D2836251F147EC600CAA6F8 /* アプリ全般の処理.h */,
+				8D2836261F147EC600CAA6F8 /* アプリ全般の処理.m */,
+				8D2836281F147EC600CAA6F8 /* 画面の制御.h */,
+				8D2836291F147EC600CAA6F8 /* 画面の制御.m */,
 				8D28362B1F147EC600CAA6F8 /* Main.storyboard */,
 				8D28362E1F147EC600CAA6F8 /* 素材.xcassets */,
 				8D2836301F147EC600CAA6F8 /* 起動画面.storyboard */,
 				8D2836331F147EC600CAA6F8 /* 情報.plist */,
 				8D2836221F147EC600CAA6F8 /* Supporting Files */,
 			);
+			name = "できるだけ〜";
 			path = ProgrammingNoProgrammingObjC;
 			sourceTree = "<group>";
 		};
@@ -150,8 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D28362A1F147EC600CAA6F8 /* 画面を制御するところ.m in Sources */,
-				8D2836271F147EC600CAA6F8 /* AppDelegate.m in Sources */,
+				8D28362A1F147EC600CAA6F8 /* 画面の制御.m in Sources */,
+				8D2836271F147EC600CAA6F8 /* アプリ全般の処理.m in Sources */,
 				8D2836241F147EC600CAA6F8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
