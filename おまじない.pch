@@ -25,7 +25,7 @@
 
 #define 特性 @property
 #define 同時に高速に動く nonatomic
-#define 弱い参照 weak
+#define 強い参照 strong
 
 #define 接続口 IBOutlet
 #define 文字用の部品の雛形 UITextView
