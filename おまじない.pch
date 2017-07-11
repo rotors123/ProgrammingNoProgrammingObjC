@@ -55,4 +55,10 @@
 #define 部品群 views
 #define 空っぽ nil
 
+#define 文字列型 NSString
+#define 書式を指定した文字列 stringWithFormat
+
+#define 横の指定 @"H:"
+#define 縦の指定 @"V:"
+
 #endif
