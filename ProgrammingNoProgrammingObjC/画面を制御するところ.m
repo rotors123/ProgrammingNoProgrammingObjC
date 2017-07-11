@@ -10,7 +10,7 @@
 
 @interface 画面を制御するところ ()
 
-@property (nonatomic, weak) IBOutlet UITextView *textView;
+@property (nonatomic, weak) IBOutlet UITextView *文字用の部品;
 
 @end
 
@@ -20,17 +20,17 @@
 
     [super viewDidLoad];
     
-    _textView.editable = NO;
+    _文字用の部品.editable = NO;
+    _文字用の部品.selectable = NO;
 
-    [self drawText];
+    [self 文字を書く];
     
 }
 
-- (void)drawText {
+- (void)文字を書く {
     
-    _textView.text = @"text\ntext.";
+    _文字用の部品.text = @"text\ntext.";
     
 }
-
 
 @end
