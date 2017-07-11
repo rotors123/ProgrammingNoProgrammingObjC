@@ -29,47 +29,41 @@
 
 }
 
-- (何も戻さない関数)画面が読み込まれた後 {
-    
-    NSLog(@"start program.");
-
-    [親クラスの 画面が読み込まれた後に];
-    
-    [自クラスの 文字用の部品を作る];
-    [自クラスの 文字を書く];
-
-    NSLog(@"end program.");
-
-}
-
 - (何も戻さない関数)文字用の部品を作る {
     
     // なぜかIBOutletでの紐付けができない状態となったので
     // コードでパーツ生成し、AutoLayoutを設定する。
     
     UITextView *textView = [[UITextView alloc] initWithFrame: self.view.bounds];
-    
-    textView.backgroundColor = [UIColor greenColor];
-    
+    textView.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview: textView];
-
     
     [textView setTranslatesAutoresizingMaskIntoConstraints: NO];
+    
     NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(textView);
-    
-    NSArray *horizontalConstraint = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|[textView]|" options: 0 metrics:nil views: viewsDictionary];
-    NSArray *verticalConstraint = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|[textView]|" options: 0 metrics:nil views: viewsDictionary];
 
-    [NSLayoutConstraint activateConstraints: horizontalConstraint];
-    [NSLayoutConstraint activateConstraints: verticalConstraint];
+    [NSLayoutConstraint activateConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[textView]|"
+                                             options: 0
+                                             metrics: nil
+                                               views: viewsDictionary]];
+    [NSLayoutConstraint activateConstraints:
+     [NSLayoutConstraint constraintsWithVisualFormat: @"V:|-100-[textView]-100-|"
+                                             options: 0
+                                             metrics: nil
+                                               views: viewsDictionary]];
     
-    // 必要な場合
-    // [textView layoutIfNeeded];
-    
+    textView.編集可能 = いいえ;
+    textView.選択可能 = いいえ;
+
     自クラスの.文字用の部品 = textView;
-
-    自クラスの.文字用の部品.編集可能 = いいえ;
-    自クラスの.文字用の部品.選択可能 = いいえ;
+    
+/*
+    [NSLayoutConstraint activateConstraints: @[
+                                              [textView.centerXAnchor constraintEqualToAnchor:view.centerXAnchor],
+                                              ...
+                                              ]];
+*/
     
     NSLog(@"textView = %@", textView);
 
