@@ -26,6 +26,7 @@
 		8D28362E1F147EC600CAA6F8 /* 素材.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "素材.xcassets"; sourceTree = "<group>"; };
 		8D2836311F147EC600CAA6F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/起動画面.storyboard"; sourceTree = "<group>"; };
 		8D2836331F147EC600CAA6F8 /* 情報.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "情報.plist"; sourceTree = "<group>"; };
+		8D2836391F14A6B500CAA6F8 /* おまじない.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "おまじない.pch"; path = "../おまじない.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 		8D2836221F147EC600CAA6F8 /* 補助ファイル */ = {
 			isa = PBXGroup;
 			children = (
+				8D2836391F14A6B500CAA6F8 /* おまじない.pch */,
 				8D2836231F147EC600CAA6F8 /* main.m */,
 			);
 			name = "補助ファイル";
@@ -276,6 +278,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "アプリのアイコン";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "起動イメージ";
+				GCC_PREFIX_HEADER = "おまじない.pch";
 				INFOPLIST_FILE = "ProgrammingNoProgrammingObjC/情報.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rotors123.ProgrammingNoProgrammingObjC;
@@ -288,6 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "アプリのアイコン";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "起動イメージ";
+				GCC_PREFIX_HEADER = "おまじない.pch";
 				INFOPLIST_FILE = "ProgrammingNoProgrammingObjC/情報.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rotors123.ProgrammingNoProgrammingObjC;
