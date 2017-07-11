@@ -48,8 +48,11 @@
 #define 制約を有効化 activateConstraints
 #define いわゆるアスキーアート的な記述で制約を constraintsWithVisualFormat
 
+#define 部品の名前 @"textView"
+
 #define オプション群 options
 #define 幅とかの指標 metrics
 #define 部品群 views
+#define 空っぽ nil
 
 #endif
